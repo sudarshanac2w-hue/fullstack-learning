@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css</title>
+        <style>
+            .container{
+                background-color: beige;
+                height: 650px;
+                border: 2px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box{
+                --primary-color:brown;
+                --custom-width:650px;
+                background-color: aquamarine;
+                width: var(--custom-width);
+                height: 330px;
+                border: 1px solid var(--primary-color);
+                margin: 5px;
+                padding: 5px;
+                overflow: auto;
+                /* box-shadow: -10px -15px brown; */
+                /* box-shadow: 10px 15px 50px brown; */
+                /* box-shadow: 10px 15px 9px 20px brown; */
+                /* box-shadow: inset 10px 15px 9px 20px brown; */
+                #head1{
+                    /* text-shadow: 12px 13px 1px white; */
+                    text-shadow:yellow 12px 13px 3px ; 
+                   
+            
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <img src="burger.jpg" height="200px" width="200px"/>
+                <h2 id="head1"> welcome to core2web</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ex voluptates natus a earum accusamus provident odio fugit officiis iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate possimus reiciendis corrupti consequuntur distinctio modi eaque et, natus molestiae mollitia.</p>
+
+
+            </div>
+        </div>
+
+
+    </body>
+</html>    

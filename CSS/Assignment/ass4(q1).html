@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        header {
+            background-color: pink;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+        nav {
+            position: static;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 1.1em;
+            text-decoration: none;
+            color: darkblue;
+        }
+        .main-layout {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        .content {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .content h2 {
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color:lightyellow;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 10px;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+       
+        footer {
+            background-color:gray;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        footer a {
+            color: white;
+        }
+        .contact-button {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: blue;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+
+            <img src="./logo.png" 
+                 alt="College Logo" 
+                 class="logo">
+
+            <h1>SITS College of Engineering</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="main-layout">
+
+           
+            <main class="content">
+
+                <section>
+                    <h2>Latest News</h2>
+                    <p>
+                        Admissions are open for the new academic year.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Upcoming Events</h2>
+                    <p>
+                        Annual Tech Fest will be conducted in upcoming days
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Placement Updates</h2>
+                    <p>
+                       multiple companies are visiting colleges.
+                    </p>
+                </section>
+
+            </main>
+
+        
+            <aside class="sidebar">
+
+                <h2>Notices</h2>
+
+                <ul>
+                    <li> tech fest date</li>
+                    <li> exam timetable</li>
+                    <li>holiday</li>
+                </ul>
+
+                <br>
+
+                <h2>Quick Links</h2>
+
+                <ul>
+                    <li><a href="#">Student Login</a></li>
+                    <li><a href="#">Result</a></li>
+                    <li><a href="#">Admission</a></li>
+                </ul>
+
+            </aside>
+
+        </div>
+        <footer>
+
+            <p>© 2026 sits College</p>
+
+            <div>
+                <a href="#">Instagram</a> |
+                <a href="#">LinkedIn</a>
+            </div>
+
+            <p>Contact: sitscollage@gmail.com</p>
+
+        </footer>
+
+    </div>
+
+    <a href="#" class="contact-button">Contact Us</a>
+
+</body>
+</html>

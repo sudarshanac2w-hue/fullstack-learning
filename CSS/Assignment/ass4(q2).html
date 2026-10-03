@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .dashboard {
+            width: 90%;
+            margin: auto;
+        }
+        header {
+            position: static;
+            background-color: lightblue;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+             width: 70px;
+            height: 70px;
+           object-fit: contain;
+        }
+        .search {
+            width: 300px;
+            padding: 10px;
+        }
+
+        .login {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+
+        .cart {
+            font-size: 1.5em;
+        }
+        .cart-icon{
+            width: 40px;
+            height: 40px;
+
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 30px;
+        }
+        .product-card {
+            width: 30%;
+            min-height: 350px;
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .product-card img {
+            width: 180px;
+            height: 150px;
+        }
+        .sale {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgb(237, 46, 46);
+            color: white;
+            padding: 5px 10px;
+        }
+
+        .product-card h2 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .product-card p {
+            font-size: 1em;
+            margin: 10px;
+        }
+        .buy-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            font-size: 0.9em;
+            margin-top: 15px;
+        }
+        footer {
+            background-color: gray;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        footer a {
+            color: white;
+        }
+        .chat {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: rgb(233, 168, 211);
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header>
+
+    <img src="./shopyfy.png" alt="Shopyfi logo" class="logo">
+
+    <input 
+        type="text" 
+        class="search" 
+        placeholder="Search Products">
+
+    <button class="login">Login</button>
+
+    <div class="cart">
+        <img  class="cart-icon" src="./cartlogo.png"/>
+    </div>
+
+</header>
+        <main class="products">
+            <div class="product-card">
+                <span class="sale">SALE 50% OFF</span>
+
+                <img src="./laptop.png"
+                     alt="Laptop">
+
+                <h2>Laptop</h2>
+
+                <p>Price: 50,000/-</p>
+
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <span class="sale">SALE 50% OFF</span>
+
+                <img src="./headphone.png"
+                     alt="Headphones">
+
+                <h2>Headphones</h2>
+
+                <p>Price: 77/-</p>
+
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <span class="sale">SALE 50% OFF</span>
+
+                <img src="./books.png"
+                     alt="Smartphone">
+
+                <h2>storyBook</h2>
+
+                <p>Price: 300/-</p>
+
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <span class="sale">SALE 50% OFF</span>
+
+                <img src="./laptop.png"
+                     alt="laptop">
+
+                <h2>Laptop</h2>
+
+                <p>Price: 5000/-</p>
+
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <span class="sale">SALE 50% OFF</span>
+
+                <img src="./headphone.png"
+                     alt="headphon">
+
+                <h2>HeadPhones</h2>
+
+                <p>Price: ₹899/-</p>
+
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <span class="sale">SALE 50% OFF</span>
+
+                <img src="./headphone.png"
+                     alt="headphones">
+
+                <h2>headphones</h2>
+
+                <p>Price: ₹800</p>
+
+                <button class="buy-button">Buy Now</button>
+            </div>
+
+        </main>
+        <footer>
+
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Help Center</a>
+            <span>© 2026 Shopfi</span>
+
+        </footer>
+
+    </div>
+    <div class="chat">
+        💬
+    </div>
+
+</body>
+</html>

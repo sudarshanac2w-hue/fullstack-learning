@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: #131921;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            gap: 20px;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .delivery {
+            width: 130px;
+            font-size: 12px;
+            padding: 8px;
+            border: 1px solid transparent;
+        
+        }
+
+        .delivery:hover {
+            border: 1px solid white;
+        }
+
+        .search-box {
+            display: flex;
+            flex: 1;
+            height: 40px;
+        }
+         .search-box:hover{
+            background-color: #f3a847;
+         }
+
+        .search-box input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .search-button {
+            width: 40px;
+            border: none;
+            background-color: #febd69;
+
+            transition: 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #f3a847;
+        }
+
+        .language {
+            white-space: nowrap;
+             width: 160px;
+            font-size: 12px;
+            padding: 8px;
+            border: 1px solid transparent;
+        }
+        .language:hover{
+             border: 1px solid white;
+
+        }
+
+        .signin {
+            white-space: nowrap;
+        
+            width: 160px;
+            font-size: 17px;
+            padding: 8px;
+            border: 1px solid transparent;
+            transition: 0.3s;
+        }
+
+        .signin:hover {
+             border: 1px solid white;
+        }
+
+        .signin span {
+            font-size: 12px;
+        }
+
+        .returns {
+            white-space: nowrap;
+            width: 160px;
+            font-size: 17px;
+            padding: 8px;
+            border: 1px solid transparent;
+
+            transition: 0.3s;
+        }
+
+        .returns:hover {
+            border: 1px solid white;
+           
+        }
+
+        .returns span {
+            font-size: 13px;
+        }
+
+        .cart {
+            font-size: 20px;
+            white-space: nowrap;
+            width: 160px;
+            font-size: 17px;
+            padding: 8px;
+            border: 1px solid transparent;
+            transition: 0.3s;
+        }
+
+        .cart:hover {
+            border: 1px solid white;
+            
+        }
+        .header-panel {
+            background-color: #232f3e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .header-panel a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 10px;
+            white-space: nowrap;
+            width: 160px;
+            font-size: 17px;
+            border: 1px solid transparent;
+            transition: 0.3s;
+            
+        }
+
+       .header-panel a:hover {
+           border: 1px solid white;
+ 
+        }
+        @media screen and (max-width: 768px) {
+            .search-box {
+                flex-basis: 100%;
+            }
+            .cart{
+                margin-left: auto;
+            }
+            .header-panel{
+                overflow-x: auto;
+            }
+            .header-panel a {
+                flex-shrink: 0;
+                font-size: 13px;
+                padding: 6px 8px;
+            }
+            .signin {
+                font-size: 13px;
+            }
+            .returns{ 
+                font-size: 13px;
+            }
+            .delivery{
+                width: 100px;
+            }
+
+       }
+       .hero-banner {
+           width: 100%;
+           overflow: hidden;
+        }
+
+        .hero-banner img {
+            width: 100%;
+            display: block;
+        }
+        .shopping-section {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            background-color: white;
+        }
+        .shopping-card {
+            background-color: white;
+            padding: 20px;
+            flex: 1;
+            transition: 0.3s;
+        }
+        .shopping-card:hover {
+            transform: scale(1.03); 
+            box-shadow: 0 4px 12px rgb(248, 120, 81);
+
+          
+            
+        }
+        .shopping-card h2 {
+            margin-bottom: 15px;
+        }
+        .shopping-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .shopping-card a {
+            display: block;
+            margin-top: 15px;
+            color: #007185;
+            text-decoration: none;
+        }       
+
+
+
+       
+            
+
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="./amazonlogo.png" alt="Amazon Logo">
+        </div>
+
+        <div class="delivery">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span>Deliver to</span>
+            <br>
+
+            <strong>pune-411041</strong>
+
+        </div>
+        <div class="search-box">
+
+            <input
+                type="text"
+                placeholder="Search Amazon"
+            >
+
+            <button class="search-button">
+                🔍︎
+            </button>
+
+        </div>
+
+        <div class="language">
+            <i class="fa-solid fa-flag"></i>
+              EN ▼
+        </div>
+
+        <div class="signin">
+
+            <span>Hello, Sign in</span>
+            <br>
+
+            <strong>Account & Lists</strong>
+
+        </div>
+
+        <div class="returns">
+
+            <span>Returns</span>
+            <br>
+
+            <strong>& Orders</strong>
+
+        </div>
+
+        <div class="cart">
+            🛒 <strong>cart</strong>
+        </div>
+
+    </nav>
+    <div class="header-panel">
+    <a href="#"> ☰ All</a>
+    <a href="#">Today's Deals</a>
+    <a href="#">Customer Service</a>
+    <a href="#">Registry</a>
+    <a href="#">Gift Cards</a>
+    <a href="#">Sell</a>
+    <a href="#">Electronics</a>
+    <a href="#">Fashion</a>
+    <a href="#">Books</a>
+
+</div>
+<div class="hero-banner">
+    <img src="./herobanner.png" alt="Great Indian Festival Sale">
+</div>
+<div class="shopping-section">
+
+    <div class="shopping-card">
+        <h2>Electronics</h2>
+        <img src="./laptop.png" alt="Electronics">
+        <a href="#">Shop now</a>
+    </div>
+
+    <div class="shopping-card">
+        <h2>Fashion & Beauty</h2>
+        <img src="./beauty.png" alt="Fashion & beauty">
+        <a href="#">Shop now</a>
+    </div>
+
+    <div class="shopping-card">
+        <h2>Home & Kitchen</h2>
+        <img src="./home.png" alt="Home and Kitchen">
+        <a href="#">Shop now</a>
+    </div>
+
+    <div class="shopping-card">
+        <h2>BOOks</h2>
+        <img src="./books.png" alt="Books">
+        <a href="#">Shop now</a>
+    </div>
+
+</div>
+
+
+</body>
+</html>
+  

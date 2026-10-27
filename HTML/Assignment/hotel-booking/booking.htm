@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <h1>Core2Dine Grand Hotel</h1>
+    <2>
+        Room Booking form
+    </2>
+    <p>Booking your Comfortable stay with us</p>
+</header>
+<hr>
+<nav>
+        <a href="index.html">Home</a>&nbsp; &nbsp;
+        <a href="rooms.html">Rooms</a>&nbsp; &nbsp;
+        <a href="room-comparison.html">Room Comparison</a>&nbsp; &nbsp;
+        <a href="booking.html">Booking</a>&nbsp; &nbsp;
+        <a href="restaurant.html">Restaurant</a>&nbsp; &nbsp;
+        <a href="gallery.html">Gallery</a> &nbsp; &nbsp;
+        <a href="facilities.html">Facilities</a>&nbsp; &nbsp;
+        <a href="media.html">Media</a> &nbsp; &nbsp;
+        <a href="contact.html">Contact</a>
+    </nav>
+    <hr>
+    
+    <main>
+        <h2>Reserve Your Room</h2>
+
+        <form>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname"
+                       placeholder="Enter your full name"
+                       minlength="3" required>
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="sudha@email.com" required>
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter your phone number"
+                       minlength="10" maxlength="10" required>
+                <br><br>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Booking Details</legend>
+
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+                <br><br>
+
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+                <br><br>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests"
+                       min="1" max="10" value="1" required>
+                <br><br>
+
+                <label for="rooms">Number of Rooms:</label>
+                <input type="number" id="rooms" name="rooms"
+                       min="1" max="5" value="1" required>
+                <br><br>
+
+                <label for="roomtype">Select Room Type:</label>
+                <select id="roomtype" name="roomtype" required>
+                    <option value="">-- Select a Room --</option>
+                    <option value="standard">Standard Room</option>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="executive">Executive Room</option>
+                    <option value="family">Family Suite</option>
+                    <option value="presidential">Presidential Suite</option>
+                </select>
+                <br><br>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Additional Preferences</legend>
+
+                <p>Meal Preference:</p>
+
+                <input type="radio" id="breakfast" name="meal" value="breakfast">
+                <label for="breakfast">Breakfast</label>
+
+                <input type="radio" id="allmeals" name="meal" value="all-meals">
+                <label for="allmeals">All Meals</label>
+
+                <input type="radio" id="nomeals" name="meal" value="no-meals">
+                <label for="nomeals">No Meals</label>
+
+                <br><br>
+
+                <p>Airport Pickup Required?</p>
+
+                <input type="radio" id="pickupyes" name="pickup" value="yes">
+                <label for="pickupyes">Yes</label>
+
+                <input type="radio" id="pickupno" name="pickup" value="no">
+                <label for="pickupno">No</label>
+
+                <br><br>
+
+                <label for="requests">Special Requests:</label>
+                <br>
+                <textarea id="requests" name="requests" rows="5" cols="40"
+                          placeholder="Enter any special requests here"></textarea>
+
+                <br><br>
+
+                <label for="idproof">Upload ID Proof:</label>
+                <input type="file" id="idproof" name="idproof"
+                       accept=".jpg,.jpeg,.png,.pdf" required>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Terms and Conditions</legend>
+
+                <input type="checkbox" id="terms" name="terms"
+                       value="accepted" required>
+                <label for="terms">
+                    I agree to the terms and conditions.
+                </label>
+
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Book Now">
+            <input type="reset" value="Reset Form">
+
+        </form>
+    </main>
+
+    <hr>
+
+
+</body>
+</html>

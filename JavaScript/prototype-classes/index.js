@@ -29,7 +29,7 @@ class Person{
     }
 
  }
- const person1=new Person("rohit",20);
+ //const person1=new Person("rohit",20);
 // const person2=new Person("mohit",10)
 // console.log(person2.name);
 

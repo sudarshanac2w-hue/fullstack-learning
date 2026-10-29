@@ -180,9 +180,9 @@
 
 async function userDetail(params) {
     
-     const comment = await fetch("userComment");
-     const photos = await fetch("userPhoto");
-     const chat = await fetch("chat");
+    //  const comment = await fetch("userComment");
+    //  const photos = await fetch("userPhoto");
+    //  const chat = await fetch("chat");
 
     const [comment,photos,chat]= await Promise.all([fetch("userComment"),fetch("photo"),fetch("chat")]);
 }

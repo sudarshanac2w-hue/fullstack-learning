@@ -1,0 +1,22 @@
+cancelDelete.addEventListener("click", () => {
+    deleteModal.classList.remove("show");
+    taskToDelete = null;
+});
+
+confirmDelete.addEventListener("click", () => {
+    if (taskToDelete) {
+        taskToDelete.remove();
+        taskToDelete = null;
+
+        updateTaskCounts();
+    }
+
+    deleteModal.classList.remove("show");
+});
+
+deleteModal.addEventListener("click", (event) => {
+    if (event.target === deleteModal) {
+        deleteModal.classList.remove("show");
+        taskToDelete = null;
+    }
+});
